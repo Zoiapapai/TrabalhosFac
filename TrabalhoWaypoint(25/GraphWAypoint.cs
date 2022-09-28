@@ -74,6 +74,11 @@ public class GraphWAypoint : MonoBehaviour
                     GameObject wpBalls = (GameObject)Instantiate(wpPrefab, hit.point, Quaternion.identity);
                     wpBallList.Add(wpBalls);
                 }
+                /*if(hit == true)
+                {
+                    this.GameObject.transform.position = Vector3.MoveTowards(!transform.position, currentWaypoint, speed * Time.deltaTime);
+                }
+                */
             }
         }
     }
